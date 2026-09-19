@@ -29,14 +29,317 @@ Ademas, hay que incluir instrucchiones y/o enunciados de cada ejercicio, no solo
 Finalmente, todas las respuestas de los ejecicios deben ir acompañadas del procedimiento y/o razonamiento.
 
 \section{Problemas de estructuras ordenadas}
+\subsection{Sea $\Sigma = \{0,1\}$. En los problemas 1-4, encuntre una cadena w que pertenezca al conjunto A con las caracteristicas indicadas, cuando sea posible.}
 
-\textbf{}
-Sea $\Sigma = \{0,1\}$. En los problemas 1-4, encuntre una cadena w que pertenezca al conjunto A con las caracteristicas indicadas, cuando sea posible.
 
-\subsection{Ejercicio 1}
 \textbf{A = $\Sigma^*$ Encuentre w tal que $|w| = 5$ }
+El lenguaje $\Sigma^*$ contiene todas las cadenas formadas con los
+símbolos $0$ y $1$, incluyendo $\lambda$.
+
+Necesitamos una cadena de longitud 5:
+
+\[
+w = 01010
+\]
+
+Su longitud es:
+
+\[
+|w| = 5
+\]
+
+\textbf{Respuesta:}
+
+\[
+\boxed{w=01010}
+\]
 
 \textbf{A = $\Sigma^+$ Encuentre w tal que $|w| =0$}
+
+\textbf{Procedimiento:}
+
+La única cadena de longitud cero es la cadena vacía:
+
+\[
+\lambda
+\]
+
+Sin embargo:
+
+\[
+\Sigma^+ = \Sigma^*-\{\lambda\}
+\]
+
+Por lo tanto:
+
+\[
+\lambda \notin \Sigma^+
+\]
+
+\textbf{Respuesta:}
+
+\[
+\boxed{\text{No es posible}}
+\]
+\textbf{A = $\Sigma^*$ Encuentre w tal que $|w| =0$}
+La cadena vacía $\lambda$ pertenece a $\Sigma^*$ y tiene longitud cero:
+
+\[
+|\lambda|=0
+\]
+
+\textbf{Respuesta:}
+
+\[
+\boxed{w=\lambda}
+\]
+
+
+\textbf{A = $\Sigma^5$ Encuentre w tal que el primer caracter de w sea 0}
+Una cadena perteneciente a $\Sigma^5$ debe tener exactamente
+5 símbolos.
+
+Podemos elegir:
+
+\[
+w=01101
+\]
+
+Se cumple que:
+
+\[
+|w|=5
+\]
+
+y su primer carácter es $0$.
+
+\textbf{Respuesta:}
+
+\[
+\boxed{w=01101}
+\]
+
+
+\subsection{Sea $\Sigma = \{a,b\}$, L1= {$ w \in \Sigma $ : w comienza con a} y L2 ={{ $w \in \Sigma^*$ : w termina en b}}.
+Dadas las cadenas w=abbbaa, $\pi$ =aaabb y $\tau$=bbaba, realice los siguientes ejercicios 5-13:}
+
+\textbf{Determine  $|\pi|$.}
+La cadena es:
+
+\[
+\pi=aaabb
+\]
+
+Contamos sus símbolos:
+
+\[
+a\quad a\quad a\quad b\quad b
+\]
+
+Por lo tanto:
+
+\[
+|\pi|=5
+\]
+
+\textbf{Respuesta:}
+
+\[
+\boxed{|\pi|=5}
+\]
+
+
+\textbf{Encuentre $\omega\pi$.}
+Tenemos:
+
+\[
+\omega=abbbaa
+\]
+
+y:
+
+\[
+\pi=aaabb
+\]
+
+La concatenación consiste en colocar $\pi$ después de $\omega$:
+
+\[
+\omega\pi=(abbbaa)(aaabb)
+\]
+
+Por lo tanto:
+
+\[
+\boxed{\omega\pi=abbbaaaaabb}
+\]
+
+\textbf{Encuentre $\pi\omega$.}
+Colocamos $\omega$ después de $\pi$:
+
+\[
+\pi\omega=(aaabb)(abbbaa)
+\]
+
+Entonces:
+
+\[
+\boxed{\pi\omega=aaabbabbbaa}
+\]
+
+\textbf{Verifique si: \[ (\omega\pi)\tau=\omega(\pi\tau)\]}
+Primero:
+
+\[
+\omega\pi=abbbaaaaabb
+\]
+
+Entonces:
+
+\[
+(\omega\pi)\tau
+=(abbbaaaaabb)(baaba)
+\]
+
+\[
+(\omega\pi)\tau=abbbaaaaabbbaaba
+\]
+
+Ahora:
+
+\[
+\pi\tau=(aaabb)(baaba)
+\]
+
+\[
+\pi\tau=aaabbbaaba
+\]
+
+Por lo tanto:
+
+\[
+\omega(\pi\tau)
+=(abbbaa)(aaabbbaaba)
+\]
+
+\[
+\omega(\pi\tau)=abbbaaaaabbbaaba
+\]
+
+Como ambos resultados son iguales:
+
+\[
+\boxed{(\omega\pi)\tau=\omega(\pi\tau)}
+\]
+
+Por lo tanto, la igualdad es verdadera.
+
+
+
+\textbf{Proporcione una palabra en $\Sigma^7$.}
+La palabra debe estar formada por símbolos de $\Sigma=\{a,b\}$
+y tener longitud 7.
+
+Elegimos:
+
+\[
+w=abababa
+\]
+
+Como:
+
+\[
+|w|=7
+\]
+
+entonces:
+
+\[
+\boxed{w=abababa}
+\]
+
+\textbf{Proporcione una palabra en $L_1\cap\Sigma^5$.}
+La palabra debe tener longitud 5 y comenzar con $a$.
+
+Elegimos:
+
+\[
+w=ababa
+\]
+
+Se cumple:
+
+\[
+|w|=5
+\]
+
+y comienza con $a$.
+
+Por lo tanto:
+
+\[
+\boxed{w=ababa}
+\]
+
+
+\textbf{Proporcione una palabra en $L_2\cap\Sigma^4$.}
+La palabra debe tener longitud 4 y terminar en $b$.
+
+Elegimos:
+
+\[
+w=aaab
+\]
+
+Se cumple:
+
+\[
+|w|=4
+\]
+
+y termina en $b$.
+
+\textbf{Respuesta:}
+
+\[
+\boxed{w=aaab}
+\]
+
+\textbf{Proporcione una palabra en $L_1\cap L_2$.}
+La palabra debe comenzar con $a$ y terminar con $b$.
+
+Una opción es:
+
+\[
+w=ab
+\]
+
+Por lo tanto:
+
+\[
+\boxed{w=ab}
+\]
+
+
+\textbf{Determine $L_1\cap\Sigma^0$.}
+Sabemos que:
+
+\[
+\Sigma^0=\{\lambda\}
+\]
+
+La cadena $\lambda$ no comienza con $a$, por lo que:
+
+\[
+\lambda\notin L_1
+\]
+
+Entonces:
+
+\[
+\boxed{L_1\cap\Sigma^0=\varnothing}
+\]
+
 
 
 
