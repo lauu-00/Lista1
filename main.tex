@@ -6,6 +6,15 @@
 \usepackage{geometry, float, fancyhdr, enumitem}
 
 \geometry{letterpaper, margin=2.5cm}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\fancyhead[L]{Diana Laura Diaz Juarez}
+\fancyhead[R]{Boleta: 2024630047}
+
+\renewcommand{\headrulewidth}{0.4pt}
 
 \begin{document}
 
@@ -339,6 +348,1175 @@ Entonces:
 \[
 \boxed{L_1\cap\Sigma^0=\varnothing}
 \]
+
+\subsection{Sea $\Sigma= \{a,b,c,d\}$ y w=abbca, $\pi =abb$, $\tau =ca$. Consideremos los siguientes lenguajes:}
+
+L1 = {$p \in \Sigma^*$ : $|p| \leq 5$}.
+
+L2 = {$a^n b^m $: $n>m$}.
+
+L3 = {$p \in \Sigma^*$ : p tiene mas letras b que letras a}.
+
+Indique si las siguientes afirmaciones (ejercicios 14-46) son verdaderas o falsas1:
+
+
+
+\textbf{$\lvert\omega\rvert=3$}
+\[
+\omega=abbca
+\]
+La cadena tiene cinco símbolos:
+\[
+\lvert\omega\rvert=5
+\]
+Por lo tanto:
+\[
+5\neq3
+\]
+
+\textbf{Respuesta:} Falso.
+
+
+\textbf{$\lvert\omega\rvert=5$}
+\[
+\omega=abbca
+\]
+Por lo tanto:
+\[
+\lvert\omega\rvert=5
+\]
+
+\textbf{Respuesta:} Verdadero.
+
+\textbf{$\omega=\tau\pi$ }
+\[
+\tau\pi=(ca)(abb)=caabb
+\]
+Mientras que:
+\[
+\omega=abbca
+\]
+Como:
+\[
+caabb\neq abbca
+\]
+
+\textbf{Respuesta:} Falso.
+
+ \textbf{$\omega=\pi\tau$}
+ \[
+\pi\tau=(abb)(ca)=abbca
+\]
+Y:
+\[
+\omega=abbca
+\]
+
+\textbf{Respuesta:} Verdadero.
+
+\textbf{$\omega(\pi\tau)=(\omega\pi)\tau$}
+La concatenación de cadenas es asociativa:
+\[
+\omega(\pi\tau)=(\omega\pi)\tau
+\]
+
+\textbf{Respuesta:} Verdadero.
+
+\textbf{$\omega(\tau\pi)=(\omega\pi)\tau$}
+\[
+\tau\pi=(ca)(abb)=caabb
+\]
+Entonces:
+\[
+\omega(\tau\pi)=abbcacaabb
+\]
+
+Por otro lado:
+\[
+(\omega\pi)\tau=(abbca)(abb)(ca)
+\]
+\[
+(\omega\pi)\tau=abbcaabbca
+\]
+
+Como:
+\[
+abbcacaabb\neq abbcaabbca
+\]
+
+\textbf{Respuesta:} Falso.
+
+\textbf{$\lambda\in\Sigma^+$}
+La clausura positiva $\Sigma^+$ contiene cadenas de longitud mayor o igual a uno.
+La cadena vacía tiene longitud cero:
+\[
+|\lambda|=0
+\]
+Por lo tanto:
+\[
+\lambda\notin\Sigma^+
+\]
+
+\textbf{Respuesta:} Falso.
+
+\textbf{$\lambda\in\Sigma^*$}
+La clausura de Kleene contiene la cadena vacía:
+\[
+\lambda\in\Sigma^*
+\]
+
+\textbf{Respuesta:} Verdadero.
+
+\textbf{$\omega\in\Sigma^5$ }
+Tenemos:
+\[
+\omega=abbca
+\]
+y:
+\[
+|\omega|=5
+\]
+
+Además, todos sus símbolos pertenecen a $\Sigma$.
+
+\textbf{Respuesta:} Verdadero.
+
+\textbf{$\omega\in\Sigma^3$}
+\[
+|\omega|=5
+\]
+pero $\Sigma^3$ contiene cadenas de longitud 3.
+
+Por lo tanto:
+\[
+\omega\notin\Sigma^3
+\]
+
+\textbf{Respuesta:} Falso.
+
+\textbf{$\pi\tau\in\Sigma^5$}
+\[
+|\pi|=3,\qquad|\tau|=2
+\]
+
+Entonces:
+\[
+|\pi\tau|=|\pi|+|\tau|=3+2=5
+\]
+
+\textbf{Respuesta:} Verdadero.
+
+\textbf{$\pi\lambda\in\Sigma^3$}
+La cadena vacía es el elemento neutro de la concatenación:
+\[
+\pi\lambda=\pi
+\]
+
+Como:
+\[
+|\pi|=3
+\]
+
+entonces:
+\[
+\pi\lambda\in\Sigma^3
+\]
+
+\textbf{Respuesta:} Verdadero.
+
+\textbf{$a^8\omega\in\Sigma^8$}
+\[
+|a^8|=8
+\]
+y:
+\[
+|\omega|=5
+\]
+
+Por lo tanto:
+\[
+|a^8\omega|=8+5=13
+\]
+
+Como:
+\[
+13\neq8
+\]
+
+\textbf{Respuesta:} Falso.
+
+\textbf{$a^3\omega\in\Sigma^8$}
+\[
+|a^3|=3
+\]
+y:
+\[
+|\omega|=5
+\]
+
+Entonces:
+\[
+|a^3\omega|=3+5=8
+\]
+
+\textbf{Respuesta:} Verdadero.
+
+\textbf{$a^3c^3\in\Sigma^9$}
+\[
+|a^3c^3|=3+3=6
+\]
+
+Como:
+\[
+6\neq9
+\]
+
+\textbf{Respuesta:} Falso.
+
+\textbf{$|a^2b^3|=|c^6|$}
+\[
+|a^2b^3|=2+3=5
+\]
+
+Mientras que:
+\[
+|c^6|=6
+\]
+
+Como:
+\[
+5\neq6
+\]
+
+\textbf{Respuesta:} Falso.
+
+\textbf{$|a^4b^3c|=|a^3b^2c^3|$}
+\[
+|a^4b^3c|=4+3+1=8
+\]
+
+Y:
+\[
+|a^3b^2c^3|=3+2+3=8
+\]
+
+Por lo tanto:
+\[
+8=8
+\]
+
+\textbf{Respuesta:} Verdadero.
+
+\textbf{$ab\in L_1$}
+\[
+L_1=\{\rho\in\Sigma^*:|\rho|\leq5\}
+\]
+
+Como:
+\[
+|ab|=2
+\]
+
+y:
+\[
+2\leq5
+\]
+
+\textbf{Respuesta:} Verdadero.
+
+\textbf{$ab\in L_2$ }
+\[
+L_2=\{a^nb^m:n<m\}
+\]
+
+Para $ab$:
+\[
+n=1,\qquad m=1
+\]
+
+Pero:
+\[
+1\not<1
+\]
+
+\textbf{Respuesta:} Falso.
+
+\textbf{$ab\in L_3$ }
+\[
+L_3=\{\rho\in\Sigma^*:\rho\text{ tiene más letras }b\text{ que letras }a\}
+\]
+
+En $ab$ tenemos:
+\[
+\#a=1,\qquad\#b=1
+\]
+
+No hay más letras $b$ que $a$.
+
+\textbf{Respuesta:} Falso.
+
+\textbf{$abab^2\in L_1$ }
+\[
+abab^2=ababb
+\]
+
+Por lo tanto:
+\[
+|abab^2|=5
+\]
+
+Como:
+\[
+5\leq5
+\]
+
+\textbf{Respuesta:} Verdadero.
+
+\textbf{$abab^2\in L_2$ }
+Una cadena de $L_2$ debe tener la forma:
+\[
+a^nb^m
+\]
+
+La cadena:
+\[
+ababb
+\]
+alterna entre $a$ y $b$, por lo que no tiene esa forma.
+
+\textbf{Respuesta:} Falso.
+
+\textbf{$abab^2\in L_3$}
+\[
+abab^2=ababb
+\]
+
+Tiene:
+\[
+\#a=2,\qquad\#b=3
+\]
+
+Como:
+\[
+3>2
+\]
+
+\textbf{Respuesta:} Verdadero.
+
+\textbf{$abcad\in L_1$}
+\[
+|abcad|=5
+\]
+
+Como:
+\[
+5\leq5
+\]
+
+\textbf{Respuesta:} Verdadero.
+
+\textbf{$abcad\in L_2$}
+Las cadenas de $L_2$ tienen la forma:
+\[
+a^nb^m
+\]
+
+La cadena $abcad$ contiene los símbolos $c$ y $d$, por lo que no tiene esa forma.
+
+\textbf{Respuesta:} Falso.
+
+\textbf{$abcad\in L_3$}
+En:
+\[
+abcad
+\]
+
+tenemos:
+\[
+\#a=2,\qquad\#b=1
+\]
+
+No hay más $b$ que $a$.
+
+\textbf{Respuesta:} Falso.
+
+\textbf{$L_1\subseteq L_2$}
+Tomemos:
+\[
+a\in L_1
+\]
+
+porque:
+\[
+|a|=1\leq5
+\]
+
+Pero:
+\[
+a\notin L_2
+\]
+
+porque una cadena de $L_2$ debe contener $a$ y $b$ cumpliendo $n<m$.
+
+Por lo tanto:
+\[
+L_1\nsubseteq L_2
+\]
+
+\textbf{Respuesta:} Falso.
+
+\textbf{$L_1\subseteq L_3$ }
+Tomemos:
+\[
+a\in L_1
+\]
+
+Pero $a$ no tiene más letras $b$ que letras $a$.
+
+Por lo tanto:
+\[
+a\notin L_3
+\]
+
+Entonces:
+\[
+L_1\nsubseteq L_3
+\]
+
+\textbf{Respuesta:} Falso.
+
+\textbf{$L_2\subseteq L_3$}
+Si:
+\[
+w\in L_2
+\]
+
+entonces:
+\[
+w=a^nb^m
+\]
+
+con:
+\[
+n<m
+\]
+
+Por lo tanto, $w$ tiene más letras $b$ que letras $a$.
+
+Entonces:
+\[
+w\in L_3
+\]
+
+y por lo tanto:
+\[
+L_2\subseteq L_3
+\]
+
+\textbf{Respuesta:} Verdadero.
+
+\textbf{$L_3\subseteq L_2$}
+Consideremos:
+\[
+ba
+\]
+
+Tiene:
+\[
+\#a=1,\qquad\#b=1
+\]
+
+Por lo tanto, en realidad $ba\notin L_3$.
+
+Tomemos mejor:
+\[
+bba
+\]
+
+Entonces:
+\[
+\#b=2,\qquad\#a=1
+\]
+
+por lo que:
+\[
+bba\in L_3
+\]
+
+Sin embargo, $bba$ no tiene la forma:
+\[
+a^nb^m
+\]
+
+Por lo tanto:
+\[
+bba\notin L_2
+\]
+
+\[
+L_3\nsubseteq L_2
+\]
+
+\textbf{Respuesta:} Falso.
+
+\textbf{$\alpha\in\Sigma^*$, entonces $alpha\lambda=\lambda\alpha$}
+
+La cadena vacía $\lambda$ es el elemento neutro de la concatenación:
+\[
+\alpha\lambda=\alpha
+\]
+
+y:
+\[
+\lambda\alpha=\alpha
+\]
+
+Por lo tanto:
+\[
+\alpha\lambda=\lambda\alpha
+\]
+
+\textbf{Respuesta:} Verdadero.
+
+\textbf{Si $\alpha\in\Sigma^3$ y $\beta\in\Sigma^4$, entonces $|\alpha\beta|=12$}
+\[
+|\alpha|=3,\qquad|\beta|=4
+\]
+
+Entonces:
+\[
+|\alpha\beta|=|\alpha|+|\beta|
+\]
+
+\[
+|\alpha\beta|=3+4=7
+\]
+
+Como:
+\[
+7\neq12
+\]
+
+\textbf{Respuesta:} Falso.
+
+\textbf{Si $\alpha\in\Sigma^3$ y $\beta\in\Sigma^4$, entonces Si $\alpha\in\Sigma^3$ y $|\alpha\beta|=7$}
+\[
+|\alpha\beta|=|\alpha|+|\beta|
+\]
+
+\[
+|\alpha\beta|=3+4=7
+\]
+
+\textbf{Respuesta:} Verdadero.
+
+\subsection{En caso de que sea posible, encuentre cinco palabras de cada uno de los lenguajes que se definen en los problemas 47-56, usando el alfabeto $\Sigma = \{0,1,2,3,4,5,6\}$}.
+
+\textbf{$L_1=\{01^n:n\in\mathbb{N}\}$.}
+La expresión $01^n$ indica que toda palabra comienza con $0$ y después
+contiene $n$ unos.
+
+Por ejemplo:
+\[
+0,\quad 01,\quad 011,\quad 0111,\quad \ldots
+\]
+
+\textbf{Respuesta:}
+\[
+L_1=\{0,01,011,0111,\ldots\}
+\]
+
+\textbf{$L_2=\{0^n1^n2^n:n\in\mathbb{N}\}$.}
+Las palabras deben tener la misma cantidad de $0$, $1$ y $2$.
+
+Para $n=1$:
+\[
+012
+\]
+
+Para $n=2$:
+\[
+001122
+\]
+
+Para $n=3$:
+\[
+000111222
+\]
+
+\textbf{Respuesta:}
+\[
+L_2=\{012,001122,000111222,\ldots\}
+\]
+
+\textbf{$L_3=\{\omega\in\Sigma^*:|\omega|=6\}.$}
+Son todas las palabras sobre $\Sigma$ que tienen exactamente seis símbolos.
+
+\textbf{Respuesta:}
+\[
+L_3=\{\omega\in\Sigma^*:|\omega|=6\}.
+\]
+
+Además,
+\[
+|L_3|=|\Sigma|^6=7^6=117649.
+\]
+
+\textbf{$L_4=\{\omega\in\Sigma^*:\text{la suma de los dígitos de }\omega
+\text{ es }6\}.$}
+Se buscan palabras cuya suma de símbolos sea exactamente $6$.
+
+Algunos ejemplos son:
+\[
+000006,\quad 000015,\quad 000024,\quad
+000033,\quad 000042.
+\]
+
+\textbf{Respuesta:}
+
+\[
+L_4=\{\omega\in\Sigma^*:\operatorname{suma}(\omega)=6\}.
+\]
+
+\textbf{Determine $L_1\cap L_2$.}
+Una palabra debe pertenecer simultáneamente a
+\[
+L_1=\{01^n:n\in\mathbb N\}
+\]
+y
+\[
+L_2=\{0^n1^n2^n:n\in\mathbb N\}.
+\]
+
+En $L_1$ solamente aparecen $0$ y $1$, mientras que en $L_2$
+aparece también al menos un $2$.
+
+Por lo tanto, no existe una palabra que pertenezca a ambos lenguajes.
+
+\textbf{Respuesta:}
+\[
+\boxed{L_1\cap L_2=\varnothing}
+\]
+
+\textbf{Determine $L_1\cap L_3$.}
+Las palabras de $L_3$ tienen longitud $6$.
+
+En $L_1$ las palabras tienen la forma $01^n$.
+
+Para que tengan longitud $6$:
+\[
+1+n=6
+\]
+\[
+n=5.
+\]
+
+Por lo tanto, la única palabra es:
+\[
+011111.
+\]
+
+\textbf{Respuesta:}
+\[
+\boxed{L_1\cap L_3=\{011111\}}
+\]
+
+\textbf{Determine $L_2\cap L_3$.}
+En $L_3$ las palabras tienen longitud $6$.
+
+Para una palabra de $L_2$:
+\[
+|0^n1^n2^n|=3n.
+\]
+
+Entonces:
+\[
+3n=6
+\]
+\[
+n=2.
+\]
+
+La palabra correspondiente es:
+\[
+001122.
+\]
+
+\textbf{Respuesta:}
+\[
+\boxed{L_2\cap L_3=\{001122\}}
+\]
+
+\textbf{Determine $L_1\cap L_4$.}
+Las palabras de $L_1$ tienen la forma:
+\[
+01^n.
+\]
+
+La suma de sus símbolos es:
+\[
+0+n=n.
+\]
+
+Para pertenecer a $L_4$:
+\[
+n=6.
+\]
+
+Entonces:
+\[
+01^6=0111111.
+\]
+
+\textbf{Respuesta:}
+\[
+\boxed{L_1\cap L_4=\{0111111\}}
+\]
+
+\textbf{Determine $L_2\cap L_4$.}
+Una palabra de $L_2$ tiene la forma:
+\[
+0^n1^n2^n.
+\]
+
+La suma de sus símbolos es:
+\[
+0n+1n+2n=3n.
+\]
+
+Para pertenecer a $L_4$:
+\[
+3n=6.
+\]
+
+Por lo tanto:
+\[
+n=2.
+\]
+
+La palabra es:
+\[
+001122.
+\]
+
+\textbf{Respuesta:}
+\[
+\boxed{L_2\cap L_4=\{001122\}}
+\]
+
+\textbf{Determine $L_3\cap L_4$.}
+La palabra debe tener longitud $6$ y la suma de sus dígitos debe ser $6$.
+
+Algunos elementos son:
+\[
+000006,\quad
+000015,\quad
+000024,\quad
+000033,\quad
+000042.
+\]
+
+\textbf{Respuesta:}
+
+\[
+\boxed{
+L_3\cap L_4=
+\{\omega\in\Sigma^*:|\omega|=6
+\text{ y la suma de sus dígitos es }6\}
+}
+\]
+
+\section{Propiedades de la clausura de kleene y positiva}
+
+\section{Reflexion o inverso de un lenguaje}
+
+\subsection{Dado A un lenguaje sobre $\Sigma$ se define $A^R$ de la siguiente forma:}
+ 
+\textbf{$ (A\cdot B)^R=B^R\cdot A^R.$}
+Sea $w\in(A\cdot B)^R$.
+
+Entonces existe $u\in A$ y $v\in B$ tales que:
+\[
+w=(uv)^R.
+\]
+
+Por la definición de reversa:
+\[
+(uv)^R=v^Ru^R.
+\]
+
+Como
+\[
+v^R\in B^R
+\]
+y
+\[
+u^R\in A^R,
+\]
+entonces:
+\[
+w\in B^RA^R.
+\]
+
+Por lo tanto:
+\[
+\boxed{(A\cdot B)^R=B^R\cdot A^R}.
+\]
+
+
+\textbf{($A\cup B)^R=A^R\cup B^R.$}
+Si $w\in A\cup B$, entonces:
+\[
+w\in A \quad\text{o}\quad w\in B.
+\]
+
+Por lo tanto:
+\[
+w^R\in A^R \quad\text{o}\quad w^R\in B^R.
+\]
+
+Así:
+\[
+w^R\in A^R\cup B^R.
+\]
+
+\textbf{Respuesta:}
+\[
+\boxed{(A\cup B)^R=A^R\cup B^R}
+\]
+
+\textbf{($A\cap B)^R=A^R\cap B^R.$}
+Si
+\[
+w\in A\cap B,
+\]
+entonces:
+\[
+w\in A
+\quad\text{y}\quad
+w\in B.
+\]
+
+Al invertir:
+\[
+w^R\in A^R
+\quad\text{y}\quad
+w^R\in B^R.
+\]
+
+Por lo tanto:
+\[
+w^R\in A^R\cap B^R.
+\]
+
+\textbf{Respuesta:}
+\[
+\boxed{(A\cap B)^R=A^R\cap B^R}
+\]
+
+
+\textbf{($A^R)^R=A.$}
+Invertir una palabra dos veces devuelve la palabra original:
+\[
+(w^R)^R=w.
+\]
+
+Por lo tanto, al invertir dos veces todos los elementos de $A$,
+obtenemos nuevamente $A$.
+
+\textbf{Respuesta:}
+\[
+\boxed{(A^R)^R=A}
+\]
+
+\textbf{($A^*)^R=(A^R)^*.$}
+Por definición:
+\[
+A^*=\bigcup_{n\geq0}A^n.
+\]
+
+Aplicando reversa:
+\[
+(A^*)^R=
+\left(\bigcup_{n\geq0}A^n\right)^R.
+\]
+
+La reversa de una concatenación de palabras de $A$ produce
+concatenaciones de palabras de $A^R$.
+
+Por lo tanto:
+\[
+(A^*)^R=\bigcup_{n\geq0}(A^R)^n.
+\]
+
+Así:
+\[
+\boxed{(A^*)^R=(A^R)^*}.
+\]
+
+\textbf{($A^+)^R=(A^R)^+.$}
+Por definición:
+\[
+A^+=\bigcup_{n\geq1}A^n.
+\]
+
+Aplicando reversa:
+\[
+(A^+)^R=
+\bigcup_{n\geq1}(A^n)^R.
+\]
+
+Cada potencia invertida corresponde a una potencia de $A^R$.
+
+Entonces:
+\[
+(A^+)^R=
+\bigcup_{n\geq1}(A^R)^n.
+\]
+
+\textbf{Respuesta:}
+\[
+\boxed{(A^+)^R=(A^R)^+}
+\]
+
+\section{Longitud de cadenas}
+
+\textbf{Si $w\in\Sigma^*$ y $n,m\in\mathbb N$, demostrar que
+\[
+|w^{n+m}|=|w^n|+|w^m|.
+\]}
+
+\[
+w^{n+m}=w^nw^m.
+\]
+
+Usando la propiedad de la longitud de una concatenación:
+\[
+|uv|=|u|+|v|,
+\]
+se obtiene:
+\[
+|w^{n+m}|=|w^n|+|w^m|.
+\]
+
+\textbf{Respuesta:}
+\[
+\boxed{|w^{n+m}|=|w^n|+|w^m|}
+\]
+
+\section{n-cadenas o n-palabras}
+
+\section{Prefijos y sufijos de una cadena}
+
+\textbf{Enumere todos los prefijos de u}
+Los prefijos se obtienen tomando los símbolos desde el inicio:
+
+\[
+\lambda
+\]
+
+\[
+b
+\]
+
+\[
+bc
+\]
+
+\[
+bcb
+\]
+
+\[
+bcba
+\]
+
+\[
+bcbaa
+\]
+
+\[
+bcbaad
+\]
+
+\[
+bcbaadb.
+\]
+
+\textbf{Respuesta:}
+
+\[
+\boxed{
+\operatorname{Pref}(u)=
+\{\lambda,b,bc,bcb,bcba,bcbaa,bcbaad,bcbaadb\}
+}
+\]
+\textbf{Enumere todos los sufijos de u}
+Los sufijos se obtienen tomando los símbolos desde el final:
+
+\[
+\lambda
+\]
+
+\[
+b
+\]
+
+\[
+db
+\]
+
+\[
+adb
+\]
+
+\[
+aadb
+\]
+
+\[
+baadb
+\]
+
+\[
+cbaadb
+\]
+
+\[
+bcbaadb.
+\]
+
+\textbf{Respuesta:}
+
+\[
+\boxed{
+\operatorname{Suf}(u)=
+\{\lambda,b,db,adb,aadb,baadb,cbaadb,bcbaadb\}
+}
+\]
+
+\section{Potencias de un lenguaje}
+
+\textbf{Sea
+\[
+\Sigma=\{0,1\}.
+\]
+Determinar $\Sigma^2$, $\Sigma^3$ y $\Sigma^4$.}
+Para $\Sigma^2$:
+
+\[
+\Sigma^2=
+\{00,01,10,11\}.
+\]
+
+Para $\Sigma^3$:
+
+\[
+\Sigma^3=
+\{000,001,010,011,100,101,110,111\}.
+\]
+
+Para $\Sigma^4$:
+
+\[
+\Sigma^4=
+\{
+0000,0001,0010,0011,
+0100,0101,0110,0111,
+1000,1001,1010,1011,
+1100,1101,1110,1111
+\}.
+\]
+
+\textbf{Demostrar que
+\[
+|uv|=|u|+|v|.
+\]}
+La concatenación $uv$ coloca todos los símbolos de $u$ seguidos de
+todos los símbolos de $v$.
+
+Por lo tanto, el número total de símbolos es la suma de sus longitudes.
+
+\textbf{Respuesta:}
+\[
+\boxed{|uv|=|u|+|v|}
+\]
+
+\textbf{Demostrar por inducción que
+\[
+|u^n|=n|u|.
+\]}
+Caso base: $n=0$.
+
+\[
+|u^0|=|\lambda|=0
+\]
+y
+\[
+0|u|=0.
+\]
+
+\textbf{Hipótesis:}
+
+\[
+|u^n|=n|u|.
+\]
+
+\textbf{Paso inductivo:}
+
+\[
+u^{n+1}=u^nu.
+\]
+
+Entonces:
+\[
+|u^{n+1}|
+=
+|u^nu|
+=
+|u^n|+|u|.
+\]
+
+Aplicando la hipótesis:
+\[
+|u^{n+1}|
+=
+n|u|+|u|
+=
+(n+1)|u|.
+\]
+
+\textbf{Respuesta:}
+\[
+\boxed{|u^n|=n|u|}
+\]
+
+\textbf{Demostrar que
+\[
+(uv)^R=v^Ru^R.
+\]}
+Por la definición recursiva de reversa, al invertir una palabra se cambia
+el orden de sus símbolos.
+
+Si primero tenemos $u$ y después $v$:
+\[
+uv,
+\]
+al invertirla, $v$ queda primero y $u$ después.
+
+Por lo tanto:
+\[
+(uv)^R=v^Ru^R.
+\]
+
+\textbf{Respuesta:}
+\[
+\boxed{(uv)^R=v^Ru^R}
+\]
+
+
+
+
 
 
 
